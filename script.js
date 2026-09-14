@@ -20,14 +20,15 @@ function initReveal() {
 
   var observer = new IntersectionObserver(
     function (entries) {
-      entries.forEach(function (entry) {
+      entries.forEach(function (entry, i) {
         if (entry.isIntersecting) {
+          entry.target.style.transitionDelay = (i % 4) * 80 + 'ms';
           entry.target.classList.add('is-revealed');
           observer.unobserve(entry.target);
         }
       });
     },
-    { root: null, rootMargin: '0px 0px -10% 0px', threshold: 0.1 }
+    { root: null, threshold: 0.12 }
   );
 
   targets.forEach(function (target) {

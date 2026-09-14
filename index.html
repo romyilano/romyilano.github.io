@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400&family=Instrument+Serif&family=Space+Mono:wght@400;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Caveat:wght@500;600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
     rel="stylesheet"
     referrerpolicy="no-referrer"
   >
@@ -21,7 +21,7 @@
 <div class="page" id="top">
 
   <header class="site-nav">
-    <a class="site-nav__logo" href="#top">Romy Ilano</a>
+    <a class="site-nav__logo" href="#top">romy ilano</a>
     <nav>
       <ul class="site-nav__links">
         <li>
@@ -36,10 +36,10 @@
             href="https://github.com/romyilano"
             target="_blank"
             rel="noopener noreferrer"
-          >GitHub</a>
+          >GitHub ↗</a>
         </li>
         <li>
-          <a class="site-nav__link site-nav__link--cta" href="#hello">Hire Me</a>
+          <a class="site-nav__link site-nav__link--cta" href="#hello">Hire me</a>
         </li>
       </ul>
     </nav>
@@ -47,14 +47,17 @@
 
   <main>
 
-    <section class="hero" id="hero" data-reveal>
+    <section class="hero section" id="hero">
       <div class="hero__text">
-        <h1 class="hero__headline">
-          I build <span class="hero__headline-rest">[TODO: source copy]</span>
-        </h1>
-        <p class="hero__role">AI product engineer · Apple platforms · San Francisco</p>
-        <p class="hero__intro">[TODO: source copy]</p>
-        <a class="hero__cta" href="#work">See the work</a>
+        <p class="hero__role"><span class="hero__role-dot" aria-hidden="true"></span>AI product engineer · Apple platforms · San Francisco</p>
+        <h1 class="hero__headline"><span class="hero__headline-line">I build</span></h1>
+        <div class="hero__row">
+          <p class="hero__intro">Senior iOS Engineer with AI skills who's worked in R&amp;D and enterprise, shipping production software across automotive, healthcare, and more.<br>Now I build with agents, Swift, and a sketchbook — and win hackathons doing it.</p>
+          <div class="hero__actions">
+            <span class="hero__doodle">scroll, there's proof ↓</span>
+            <a class="hero__cta" href="#work">See the work</a>
+          </div>
+        </div>
       </div>
       <figure class="hero__figure">
         <img
@@ -67,165 +70,128 @@
           fetchpriority="high"
         >
         <span class="hero__avatar-highlight" aria-hidden="true"></span>
-        <figcaption class="hero__avatar-caption">[TODO: source copy]</figcaption>
+        <figcaption class="hero__avatar-caption">self-portrait, ink</figcaption>
       </figure>
     </section>
 
-    <div class="ticker" data-reveal>
+    <div class="ticker">
       <div class="ticker__track">
         <ul class="ticker__list">
-          <li class="ticker__item">[TODO: source copy]</li>
-          <li class="ticker__item">[TODO: source copy]</li>
-          <li class="ticker__item">[TODO: source copy]</li>
-          <li class="ticker__item">[TODO: source copy]</li>
-          <li class="ticker__item">[TODO: source copy]</li>
-          <li class="ticker__item">[TODO: source copy]</li>
+          <li class="ticker__item">Bell Labs · Member of Technical Staff</li>
+          <li class="ticker__sep" aria-hidden="true">✦</li>
+          <li class="ticker__item">Production healthcare · EMR, med ordering, lab systems</li>
+          <li class="ticker__sep" aria-hidden="true">✦</li>
+          <li class="ticker__item">Hackathon prize winner · Poiret Salon · Stanford AI Law</li>
+          <li class="ticker__sep" aria-hidden="true">✦</li>
+          <li class="ticker__item">visionOS · ARKit · RealityKit</li>
+          <li class="ticker__sep" aria-hidden="true">✦</li>
+          <li class="ticker__item">382 public repos · Arctic Code Vault</li>
+          <li class="ticker__sep" aria-hidden="true">✦</li>
+          <li class="ticker__item">Teaches generative AI at sudoroom</li>
+          <li class="ticker__sep" aria-hidden="true">✦</li>
         </ul>
         <ul class="ticker__list" aria-hidden="true">
-          <li class="ticker__item">[TODO: source copy]</li>
-          <li class="ticker__item">[TODO: source copy]</li>
-          <li class="ticker__item">[TODO: source copy]</li>
-          <li class="ticker__item">[TODO: source copy]</li>
-          <li class="ticker__item">[TODO: source copy]</li>
-          <li class="ticker__item">[TODO: source copy]</li>
+          <li class="ticker__item">Bell Labs · Member of Technical Staff</li>
+          <li class="ticker__sep" aria-hidden="true">✦</li>
+          <li class="ticker__item">Production healthcare · EMR, med ordering, lab systems</li>
+          <li class="ticker__sep" aria-hidden="true">✦</li>
+          <li class="ticker__item">Hackathon prize winner · Poiret Salon · Stanford AI Law</li>
+          <li class="ticker__sep" aria-hidden="true">✦</li>
+          <li class="ticker__item">visionOS · ARKit · RealityKit</li>
+          <li class="ticker__sep" aria-hidden="true">✦</li>
+          <li class="ticker__item">382 public repos · Arctic Code Vault</li>
+          <li class="ticker__sep" aria-hidden="true">✦</li>
+          <li class="ticker__item">Teaches generative AI at sudoroom</li>
+          <li class="ticker__sep" aria-hidden="true">✦</li>
         </ul>
       </div>
     </div>
 
-    <section class="section" id="work" data-reveal>
-      <h2 class="section__title">Major projects</h2>
-      <p class="section__intro">[TODO: source copy]</p>
+    <section class="section" id="work">
+      <div class="section__head" data-reveal>
+        <h2 class="section__title">Major projects</h2>
+      </div>
 
       <ol class="project-list">
         <li class="project-card" data-reveal>
-          <div class="project-card__media">
-            <img
-              class="project-card__img"
-              src="public/assets/images/illustrations/comic-explain.svg"
-              alt=""
-              width="1408"
-              height="762"
-              loading="lazy"
-              decoding="async"
-            >
-          </div>
+          <span class="project-card__num">01</span>
           <div class="project-card__body">
             <div class="project-card__head">
-              <h3 class="project-card__title">Comic Explain</h3>
-              <span class="project-card__badge">[TODO: source copy]</span>
+              <h3 class="project-card__title"><a href="https://www.comicexplain.com" target="_blank" rel="noopener noreferrer">Comic Explain</a></h3>
+              <span class="project-card__badge">Studio · iPad + Web</span>
             </div>
-            <p class="project-card__desc">[TODO: source copy]</p>
+            <p class="project-card__desc">A client-side prototyping studio for educational manga explainers. Paste prose, get a whole-comic prompt bundle; author per-page prompts, preview live, copy out to any image model. Ingests arXiv and PubMed papers from event links through an SSRF-guarded server hop. Companion native app in SwiftUI.</p>
             <ul class="project-card__tags">
-              <li class="project-card__tag">[TODO: source copy]</li>
-              <li class="project-card__tag">[TODO: source copy]</li>
-              <li class="project-card__tag">[TODO: source copy]</li>
+              <li class="project-card__tag">Vite</li>
+              <li class="project-card__tag">React</li>
+              <li class="project-card__tag">TypeScript</li>
+              <li class="project-card__tag">SwiftUI</li>
+              <li class="project-card__tag">Vercel functions</li>
+              <li class="project-card__tag">Google Sign-In</li>
             </ul>
             <ul class="project-card__links">
-              <li><a class="project-card__link" href="#" data-todo="source-copy">[TODO: source copy]</a></li>
-              <li><a class="project-card__link" href="#" data-todo="source-copy">[TODO: source copy]</a></li>
+              <li><a class="project-card__link" href="https://www.comicexplain.com" target="_blank" rel="noopener noreferrer">comicexplain.com ↗</a></li>
+              <li><a class="project-card__link project-card__link--secondary" href="https://github.com/romyilano/comicexplain" target="_blank" rel="noopener noreferrer">Source ↗</a></li>
             </ul>
+          </div>
+          <div class="project-card__media" style="--tilt: 1deg">
+            <div class="project-card__frame">
+              <img
+                class="project-card__img"
+                src="public/assets/images/illustrations/comic-explain.svg"
+                alt=""
+                width="1408"
+                height="762"
+                loading="lazy"
+                decoding="async"
+              >
+              <span class="project-card__caption">technical concepts → educational manga</span>
+            </div>
+            <span class="project-card__sticker" aria-hidden="true"></span>
           </div>
         </li>
 
         <li class="project-card" data-reveal>
-          <div class="project-card__media">
-            <img
-              class="project-card__img"
-              src="public/assets/images/backgrounds/projects/poelove_hero.png"
-              alt="Poelove project screenshot"
-              width="1408"
-              height="762"
-              loading="lazy"
-              decoding="async"
-            >
-          </div>
+          <span class="project-card__num">02</span>
           <div class="project-card__body">
             <div class="project-card__head">
-              <h3 class="project-card__title">Poelove</h3>
-              <span class="project-card__badge">[TODO: source copy]</span>
+              <h3 class="project-card__title"><a href="https://www.poelove.com" target="_blank" rel="noopener noreferrer">Poelove</a></h3>
+              <span class="project-card__badge">Language learning · VR</span>
             </div>
-            <p class="project-card__desc">[TODO: source copy]</p>
+            <p class="project-card__desc">Learn a language through its poetry instead of lesson plans. Read Pushkin and Akhmatova line by line with translations, vocabulary in context, and hand-drawn illustrations; select poems open in VR. Started with Russian; the pipeline is language-agnostic.</p>
             <ul class="project-card__tags">
-              <li class="project-card__tag">[TODO: source copy]</li>
-              <li class="project-card__tag">[TODO: source copy]</li>
-              <li class="project-card__tag">[TODO: source copy]</li>
+              <li class="project-card__tag">Web</li>
+              <li class="project-card__tag">visionOS</li>
+              <li class="project-card__tag">WebXR</li>
+              <li class="project-card__tag">Hand-drawn art</li>
             </ul>
             <ul class="project-card__links">
-              <li><a class="project-card__link" href="#" data-todo="source-copy">[TODO: source copy]</a></li>
-              <li><a class="project-card__link" href="#" data-todo="source-copy">[TODO: source copy]</a></li>
+              <li><a class="project-card__link" href="https://www.poelove.com" target="_blank" rel="noopener noreferrer">poelove.com ↗</a></li>
             </ul>
+          </div>
+          <div class="project-card__media" style="--tilt: -1.6deg">
+            <div class="project-card__frame">
+              <img
+                class="project-card__img"
+                src="public/assets/images/backgrounds/projects/poelove_hero.png"
+                alt="Poelove project screenshot"
+                width="1408"
+                height="762"
+                loading="lazy"
+                decoding="async"
+              >
+              <span class="project-card__caption">Pushkin, Akhmatova, my ink drawings</span>
+            </div>
+            <span class="project-card__sticker" aria-hidden="true"></span>
           </div>
         </li>
       </ol>
+      <div class="project-list__end"></div>
     </section>
 
-    <section class="section" id="hackathons" data-reveal>
-      <h2 class="section__title">Hackathon wins</h2>
-      <p class="section__intro">[TODO: source copy]</p>
-
-      <ol class="project-list">
-        <li class="project-card" data-reveal>
-          <div class="project-card__media">
-            <img
-              class="project-card__img"
-              src="public/assets/images/illustrations/cuentame.svg"
-              alt=""
-              width="1408"
-              height="762"
-              loading="lazy"
-              decoding="async"
-            >
-          </div>
-          <div class="project-card__body">
-            <div class="project-card__head">
-              <h3 class="project-card__title">Cuéntame</h3>
-              <span class="project-card__badge">[TODO: source copy]</span>
-            </div>
-            <p class="project-card__desc">[TODO: source copy]</p>
-            <ul class="project-card__tags">
-              <li class="project-card__tag">[TODO: source copy]</li>
-              <li class="project-card__tag">[TODO: source copy]</li>
-              <li class="project-card__tag">[TODO: source copy]</li>
-            </ul>
-            <ul class="project-card__links">
-              <li><a class="project-card__link" href="#" data-todo="source-copy">[TODO: source copy]</a></li>
-              <li><a class="project-card__link" href="#" data-todo="source-copy">[TODO: source copy]</a></li>
-            </ul>
-          </div>
-        </li>
-
-        <li class="project-card" data-reveal>
-          <div class="project-card__media">
-            <img
-              class="project-card__img"
-              src="public/assets/images/illustrations/surf-or-skate.svg"
-              alt=""
-              width="1408"
-              height="762"
-              loading="lazy"
-              decoding="async"
-            >
-          </div>
-          <div class="project-card__body">
-            <div class="project-card__head">
-              <h3 class="project-card__title">Surf or Skate</h3>
-              <span class="project-card__badge">[TODO: source copy]</span>
-            </div>
-            <p class="project-card__desc">[TODO: source copy]</p>
-            <ul class="project-card__tags">
-              <li class="project-card__tag">[TODO: source copy]</li>
-              <li class="project-card__tag">[TODO: source copy]</li>
-              <li class="project-card__tag">[TODO: source copy]</li>
-            </ul>
-            <ul class="project-card__links">
-              <li><a class="project-card__link" href="#" data-todo="source-copy">[TODO: source copy]</a></li>
-              <li><a class="project-card__link" href="#" data-todo="source-copy">[TODO: source copy]</a></li>
-            </ul>
-          </div>
-        </li>
-      </ol>
-
-      <div class="hackathon-more" data-reveal>
+    <section class="section" id="hackathons">
+      <div class="section__head" data-reveal>
+        <h2 class="section__title">Hackathon wins</h2>
         <button
           type="button"
           id="hackathon-more-toggle"
@@ -233,16 +199,102 @@
           aria-expanded="false"
           aria-controls="hackathon-more-panel"
         >(more)</button>
+      </div>
+
+      <ol class="project-list">
+        <li class="project-card" data-reveal>
+          <span class="project-card__num">01</span>
+          <div class="project-card__body">
+            <div class="project-card__head">
+              <h3 class="project-card__title"><a href="https://github.com/romyilano/cuentame" target="_blank" rel="noopener noreferrer">Cuéntame</a></h3>
+              <span class="project-card__badge">Health · AI</span>
+            </div>
+            <p class="project-card__desc">A patient-controlled, source-linked bilingual health hand-off. Show a doctor where it hurts on a 3D body map and carry your history across a language barrier. Vision model reads health-app screenshots into structured facts with per-fact confidence; text model translates to Spanish. Synthetic fixtures only, no real PHI.</p>
+            <ul class="project-card__tags">
+              <li class="project-card__tag">Next.js</li>
+              <li class="project-card__tag">TypeScript</li>
+              <li class="project-card__tag">Qwen2.5-VL 72B</li>
+              <li class="project-card__tag">Gemma 3</li>
+              <li class="project-card__tag">Nebius</li>
+              <li class="project-card__tag">AWS</li>
+            </ul>
+            <ul class="project-card__links">
+              <li><a class="project-card__link" href="https://github.com/romyilano/cuentame" target="_blank" rel="noopener noreferrer">Repo + demo video ↗</a></li>
+            </ul>
+          </div>
+          <div class="project-card__media" style="--tilt: 1.5deg">
+            <div class="project-card__frame">
+              <img
+                class="project-card__img"
+                src="public/assets/images/illustrations/cuentame.svg"
+                alt=""
+                width="1408"
+                height="762"
+                loading="lazy"
+                decoding="async"
+              >
+              <span class="project-card__caption">&quot;tell me&quot; — 3D pain map, bilingual</span>
+            </div>
+            <span class="project-card__sticker" aria-hidden="true"></span>
+          </div>
+        </li>
+
+        <li class="project-card" data-reveal>
+          <span class="project-card__num">02</span>
+          <div class="project-card__body">
+            <div class="project-card__head">
+              <h3 class="project-card__title"><a href="https://agentnativesurfskate.vercel.app" target="_blank" rel="noopener noreferrer">Surf or Skate</a></h3>
+              <span class="project-card__badge">Agent-native · Hackathon</span>
+            </div>
+            <p class="project-card__desc">Built in two days at the Agent Native Builders Hackathon at Cloudflare HQ. Answers &quot;surf, skate, or bike?&quot; by sending the question to eight independent agents that argue it out and land on one answer in about a second. Animated fleet diorama, live agent-to-agent stream, self-serve API with no signup.</p>
+            <ul class="project-card__tags">
+              <li class="project-card__tag">Cloudflare</li>
+              <li class="project-card__tag">Cotal A2A</li>
+              <li class="project-card__tag">Vercel</li>
+              <li class="project-card__tag">Frozen event schema</li>
+              <li class="project-card__tag">XR diorama</li>
+            </ul>
+            <ul class="project-card__links">
+              <li><a class="project-card__link" href="https://agentnativesurfskate.vercel.app" target="_blank" rel="noopener noreferrer">Live ↗</a></li>
+              <li><a class="project-card__link project-card__link--secondary" href="https://github.com/romyilano/agent_native_surf_skate" target="_blank" rel="noopener noreferrer">Source ↗</a></li>
+            </ul>
+          </div>
+          <div class="project-card__media" style="--tilt: -1.2deg">
+            <div class="project-card__frame">
+              <img
+                class="project-card__img"
+                src="public/assets/images/illustrations/surf-or-skate.svg"
+                alt=""
+                width="1408"
+                height="762"
+                loading="lazy"
+                decoding="async"
+              >
+              <span class="project-card__caption">8 agents argue, one answer, ~1s</span>
+            </div>
+            <span class="project-card__sticker" aria-hidden="true"></span>
+          </div>
+        </li>
+      </ol>
+      <div class="project-list__end"></div>
+
+      <div class="hackathon-more">
         <div id="hackathon-more-panel" class="hackathon-more__panel" inert>
           <div class="hackathon-more__inner">
             <ul class="hackathon-more__list">
               <li class="hackathon-more__item">
-                <h3>Poiret Salon</h3>
-                <p>[TODO: source copy]</p>
+                <span class="hackathon-more__num">03</span>
+                <div class="hackathon-more__line">
+                  <h3>Poiret Salon</h3>
+                  <span class="hackathon-more__detail">Skills for creatives in a historical WWI drama in France · prize winner</span>
+                </div>
               </li>
               <li class="hackathon-more__item">
-                <h3>Stanford AI Law</h3>
-                <p>[TODO: source copy]</p>
+                <span class="hackathon-more__num">04</span>
+                <div class="hackathon-more__line">
+                  <h3>Stanford AI Law</h3>
+                  <span class="hackathon-more__detail">Hackathon prize winner</span>
+                </div>
               </li>
             </ul>
           </div>
@@ -250,91 +302,108 @@
       </div>
     </section>
 
-    <section class="section" id="receipts" data-reveal>
-      <h2 class="section__title">Receipts</h2>
-      <p class="section__intro">[TODO: source copy]</p>
+    <section class="section" id="receipts">
+      <div class="receipts">
+        <div class="receipts__intro" data-reveal>
+          <h2 class="section__title">Engineering + Product + UX</h2>
+          <p class="section__intro">A decade across engineering, product, and design. The engineering part is the spine; the rest is why the things I ship look and feel finished.</p>
+          <p class="receipts__doodle">← ask me about any of these</p>
+        </div>
 
-      <table class="receipts-table" data-reveal>
-        <caption class="visually-hidden">Career facts by domain</caption>
-        <tbody>
-          <tr class="receipts-table__row">
-            <th scope="row" class="receipts-table__label">Research</th>
-            <td class="receipts-table__fact">[TODO: source copy]</td>
-          </tr>
-          <tr class="receipts-table__row">
-            <th scope="row" class="receipts-table__label">Healthcare</th>
-            <td class="receipts-table__fact">[TODO: source copy]</td>
-          </tr>
-          <tr class="receipts-table__row">
-            <th scope="row" class="receipts-table__label">Spatial</th>
-            <td class="receipts-table__fact">[TODO: source copy]</td>
-          </tr>
-          <tr class="receipts-table__row">
-            <th scope="row" class="receipts-table__label">AI</th>
-            <td class="receipts-table__fact">[TODO: source copy]</td>
-          </tr>
-          <tr class="receipts-table__row">
-            <th scope="row" class="receipts-table__label">Product</th>
-            <td class="receipts-table__fact">[TODO: source copy]</td>
-          </tr>
-          <tr class="receipts-table__row">
-            <th scope="row" class="receipts-table__label">Community</th>
-            <td class="receipts-table__fact">[TODO: source copy]</td>
-          </tr>
-          <tr class="receipts-table__row">
-            <th scope="row" class="receipts-table__label">Automotive</th>
-            <td class="receipts-table__fact">[TODO: source copy]</td>
-          </tr>
-        </tbody>
-      </table>
+        <table class="receipts-table" data-reveal>
+          <caption class="visually-hidden">Career facts by domain</caption>
+          <tbody>
+            <tr class="receipts-table__row">
+              <th scope="row" class="receipts-table__label">Research</th>
+              <td class="receipts-table__fact"><strong>Bell Labs</strong> — Member of Technical Staff. The place that taught me what rigor looks like.</td>
+            </tr>
+            <tr class="receipts-table__row">
+              <th scope="row" class="receipts-table__label">Healthcare</th>
+              <td class="receipts-table__fact"><strong>Production clinical software</strong> — EMR, clinical workflows, medication ordering, lab systems. Regulated, on-call, real patients.</td>
+            </tr>
+            <tr class="receipts-table__row">
+              <th scope="row" class="receipts-table__label">Spatial</th>
+              <td class="receipts-table__fact"><strong>visionOS · ARKit · RealityKit</strong> — Diorama XR, Conference 360, Model Mover. Small talent pool, I am in it.</td>
+            </tr>
+            <tr class="receipts-table__row">
+              <th scope="row" class="receipts-table__label">AI, proven</th>
+              <td class="receipts-table__fact"><strong>Hackathon prizes</strong> — Poiret Salon (Claude skills pipeline), Stanford AI Law Hackathon (Llama 2), Cloudflare Agent Native Builders.</td>
+            </tr>
+            <tr class="receipts-table__row">
+              <th scope="row" class="receipts-table__label">Product</th>
+              <td class="receipts-table__fact"><strong>PM &amp; PMM before engineering</strong> — Product management for SMS &amp; payments at Hands-On Mobile; product marketing at Xumii Mobile.</td>
+            </tr>
+            <tr class="receipts-table__row">
+              <th scope="row" class="receipts-table__label">Community</th>
+              <td class="receipts-table__fact"><strong>sudoroom · iOS study group</strong> — Teaches generative AI at an Oakland hackerspace. 382 public repos, Arctic Code Vault contributor.</td>
+            </tr>
+            <tr class="receipts-table__row">
+              <th scope="row" class="receipts-table__label">Automotive</th>
+              <td class="receipts-table__fact"><strong>iOS at Drivemode and Mercedes Benz R &amp; D</strong> — Shipped driver-facing mobile software where latency and distraction have consequences.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
-    <section class="section" id="hello" data-reveal>
-      <h2 class="section__title">Hello</h2>
-      <p class="section__intro">[TODO: source copy]</p>
+    <section class="hello" id="hello">
+      <div class="hello__inner">
+        <div class="hello__intro" data-reveal>
+          <p class="hello__kicker">looking for collaboration?</p>
+          <h2 class="section__title hello__title">Let's build<br>something real.</h2>
+        </div>
 
-      <ul class="hello__links" data-reveal>
-        <li>
-          <a class="hello__link" href="#" data-todo="source-copy">
-            <span class="hello__link-label">Email</span>
-            <span class="hello__link-value">[TODO: source copy]</span>
-          </a>
-        </li>
-        <li>
-          <a
-            class="hello__link"
-            href="https://github.com/romyilano"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span class="hello__link-label">GitHub</span>
-            <span class="hello__link-value">github.com/romyilano</span>
-          </a>
-        </li>
-        <li>
-          <a class="hello__link" href="#" data-todo="source-copy">
-            <span class="hello__link-label">LinkedIn</span>
-            <span class="hello__link-value">[TODO: source copy]</span>
-          </a>
-        </li>
-        <li>
-          <a
-            class="hello__link"
-            href="https://miromi.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span class="hello__link-label">Art</span>
-            <span class="hello__link-value">miromi.com</span>
-          </a>
-        </li>
-      </ul>
+        <ul class="hello__links" data-reveal>
+          <li>
+            <a class="hello__link" href="mailto:hello@romyilano.com">
+              <span class="hello__link-label">Email</span>
+              <span class="hello__link-value">hello@romyilano.com ↗</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="hello__link"
+              href="https://github.com/romyilano"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="hello__link-label">GitHub</span>
+              <span class="hello__link-value">@romyilano ↗</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="hello__link"
+              href="https://www.linkedin.com/in/rilano/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="hello__link-label">LinkedIn</span>
+              <span class="hello__link-value">/in/rilano ↗</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="hello__link"
+              href="https://miromi.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="hello__link-label">Art</span>
+              <span class="hello__link-value">miromi.com ↗</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
 
   </main>
 
   <footer class="site-footer">
-    <p class="site-footer__line">San Francisco &middot; [TODO: source copy]</p>
+    <div class="site-footer__inner">
+      <span>San Francisco · Oakland</span>
+      <span>&copy; 2026 Romy Ilano · hand-built, no template</span>
+    </div>
   </footer>
 
 </div>

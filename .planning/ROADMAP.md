@@ -12,8 +12,8 @@ This milestone adds a dedicated Projects section to the site: a listing page imp
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Projects Listing & Detail Pages** - Import the "Projects v3" design canvas and build the static Projects listing page plus a reusable project detail-page template
-- [ ] **Phase 2: Navigation & Delivery** - Link the new Projects page from the landing page and ship the change as a draft PR
+- [x] **Phase 1: Projects Listing & Detail Pages** - Import the "Projects v3" design canvas and build the static Projects listing page plus a reusable project detail-page template
+- [x] **Phase 2: Navigation & Delivery** - Link the new Projects page from the landing page and ship the change as a draft PR
 
 ## Phase Details
 
@@ -50,5 +50,5 @@ Phases execute in numeric order: 1 → 2
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Projects Listing & Detail Pages | 0/TBD | Not started | - |
-| 2. Navigation & Delivery | 0/TBD | Not started | - |
+| 1. Projects Listing & Detail Pages | N/A (implemented directly) | Complete | 2026-09-17 |
+| 2. Navigation & Delivery | N/A (implemented directly) | Complete | 2026-09-17 |

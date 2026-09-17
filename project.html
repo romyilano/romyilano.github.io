@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title id="project-doc-title">Project — Romy Ilano</title>
+  <meta name="description" id="project-meta-description" content="A project by Romy Ilano.">
+  <link rel="canonical" href="https://romyilano.github.io/project.html">
+
+  <meta name="theme-color" content="#f7f4ee">
+  <link rel="icon" type="image/svg+xml" href="public/assets/icons/favicon.svg">
+
+  <script>document.documentElement.classList.add('js');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Caveat:wght@500;600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet"
+    referrerpolicy="no-referrer"
+  >
+  <link rel="stylesheet" href="styles.css">
+  <script src="projects-data.js" defer></script>
+  <script src="projects.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="page" id="top">
+
+  <header class="site-nav">
+    <a class="site-nav__logo" href="index.html">romy ilano</a>
+    <nav>
+      <ul class="site-nav__links">
+        <li>
+          <a class="site-nav__link site-nav__link--current" href="projects.html" aria-current="page">Projects</a>
+        </li>
+        <li>
+          <a class="site-nav__link" href="index.html#work">Work</a>
+        </li>
+        <li>
+          <a
+            class="site-nav__link"
+            href="https://github.com/romyilano"
+            target="_blank"
+            rel="noopener noreferrer"
+          >GitHub ↗</a>
+        </li>
+        <li>
+          <a class="site-nav__link site-nav__link--cta" href="index.html#hello">Hire me</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="project-detail section" id="project-detail">
+      <a class="project-detail__back" href="projects.html">← All projects</a>
+
+      <noscript>
+        <p class="project-detail__noscript">This page needs JavaScript to load project details. <a href="projects.html">See the full projects list</a> instead.</p>
+      </noscript>
+
+      <div id="project-detail-content" hidden>
+        <div class="project-detail__head" data-reveal>
+          <div class="project-detail__head-meta">
+            <span class="project-detail__num" id="project-num"></span>
+            <span class="project-detail__meta" id="project-meta"></span>
+          </div>
+          <h1 class="project-detail__title" id="project-title"></h1>
+          <p class="project-detail__badge-row" id="project-badges"></p>
+        </div>
+
+        <div class="project-detail__media" data-reveal id="project-media"></div>
+
+        <div class="project-detail__body" data-reveal>
+          <p class="project-detail__description" id="project-description"></p>
+          <ul class="project-card__tags" id="project-tags"></ul>
+          <ul class="project-card__links" id="project-links"></ul>
+        </div>
+
+        <nav class="project-detail__pager" aria-label="Other projects" data-reveal>
+          <a class="project-detail__pager-link project-detail__pager-link--prev" id="project-prev-link">
+            <span class="project-detail__pager-label">← Previous</span>
+            <span class="project-detail__pager-title" id="project-prev-title"></span>
+          </a>
+          <a class="project-detail__pager-link project-detail__pager-link--next" id="project-next-link">
+            <span class="project-detail__pager-label">Next →</span>
+            <span class="project-detail__pager-title" id="project-next-title"></span>
+          </a>
+        </nav>
+      </div>
+
+      <div id="project-detail-notfound" hidden>
+        <p class="project-detail__notfound-doodle">nothing here — that project doesn't exist.</p>
+        <a class="hero__cta" href="projects.html">Back to all projects</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="projects-footer">
+    <div class="projects-footer__inner">
+      <a class="projects-footer__next" href="index.html#work">Back to the full profile →</a>
+      <a class="projects-footer__hello" href="index.html#hello">Say hello ↗</a>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

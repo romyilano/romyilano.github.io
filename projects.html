@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects — Romy Ilano</title>
+  <meta name="description" content="Things Romy Ilano made and shipped — personal projects and hackathon wins across Web, iOS, and visionOS.">
+  <link rel="canonical" href="https://romyilano.github.io/projects.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://romyilano.github.io/projects.html">
+  <meta property="og:title" content="Projects — Romy Ilano">
+  <meta property="og:description" content="Things Romy Ilano made and shipped — personal projects and hackathon wins across Web, iOS, and visionOS.">
+  <meta property="og:image" content="https://romyilano.github.io/public/assets/images/avatar-cartoon.jpeg">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Projects — Romy Ilano">
+  <meta name="twitter:description" content="Things Romy Ilano made and shipped — personal projects and hackathon wins across Web, iOS, and visionOS.">
+  <meta name="twitter:image" content="https://romyilano.github.io/public/assets/images/avatar-cartoon.jpeg">
+
+  <meta name="theme-color" content="#f7f4ee">
+  <link rel="icon" type="image/svg+xml" href="public/assets/icons/favicon.svg">
+
+  <script>document.documentElement.classList.add('js');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Caveat:wght@500;600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet"
+    referrerpolicy="no-referrer"
+  >
+  <link rel="stylesheet" href="styles.css">
+  <script src="projects-data.js" defer></script>
+  <script src="projects.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="page" id="top">
+
+  <header class="site-nav">
+    <a class="site-nav__logo" href="index.html">romy ilano</a>
+    <nav>
+      <ul class="site-nav__links">
+        <li>
+          <a class="site-nav__link site-nav__link--current" href="projects.html" aria-current="page">Projects</a>
+        </li>
+        <li>
+          <a class="site-nav__link" href="index.html#work">Work</a>
+        </li>
+        <li>
+          <a
+            class="site-nav__link"
+            href="https://github.com/romyilano"
+            target="_blank"
+            rel="noopener noreferrer"
+          >GitHub ↗</a>
+        </li>
+        <li>
+          <a class="site-nav__link site-nav__link--cta" href="index.html#hello">Hire me</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <section class="projects-hero section">
+      <div class="projects-hero__head">
+        <div>
+          <p class="projects-hero__eyebrow" data-reveal id="projects-featured-count">Featured</p>
+          <h1 class="projects-hero__title" data-reveal>Things I made and shipped.</h1>
+        </div>
+        <div class="projects-carousel__controls" data-reveal>
+          <span class="projects-carousel__label" id="projects-slide-label" aria-live="polite">01 / 07</span>
+          <button type="button" class="projects-carousel__btn" id="projects-prev" aria-label="Previous project">←</button>
+          <button type="button" class="projects-carousel__btn" id="projects-next" aria-label="Next project">→</button>
+        </div>
+      </div>
+
+      <div class="projects-carousel">
+        <ul class="projects-carousel__track" id="projects-carousel-track"></ul>
+      </div>
+    </section>
+
+    <section id="all" class="projects-archive section">
+      <div class="projects-archive__head" data-reveal>
+        <h2 class="section__title">Everything</h2>
+        <span class="projects-archive__count" id="projects-shown-count"></span>
+      </div>
+
+      <div class="projects-filter-bar" data-reveal>
+        <div class="projects-filter-group" id="projects-filter-kind" role="group" aria-label="Filter by kind"></div>
+        <span class="projects-filter-sep" aria-hidden="true">·</span>
+        <div class="projects-filter-group" id="projects-filter-platform" role="group" aria-label="Filter by platform"></div>
+        <span class="projects-filter-sep" aria-hidden="true">·</span>
+        <button type="button" class="projects-filter__chip projects-filter__chip--prize" id="projects-filter-prize">✦ Won a prize</button>
+        <button type="button" class="projects-filter__clear" id="projects-filter-clear">Clear</button>
+      </div>
+
+      <div class="projects-grid" id="projects-grid"></div>
+      <p class="projects-empty" id="projects-empty" hidden>nothing matches that combination, yet.</p>
+    </section>
+
+  </main>
+
+  <footer class="projects-footer">
+    <div class="projects-footer__inner">
+      <a class="projects-footer__next" href="index.html#work">Back to the full profile →</a>
+      <a class="projects-footer__hello" href="index.html#hello">Say hello ↗</a>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

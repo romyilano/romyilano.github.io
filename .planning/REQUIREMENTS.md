@@ -45,18 +45,18 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| PROJ-01 | TBD | Pending |
-| PROJ-02 | TBD | Pending |
-| PROJ-03 | TBD | Pending |
-| PROJ-04 | TBD | Pending |
-| PROJ-05 | TBD | Pending |
-| NAV-01 | TBD | Pending |
-| SHIP-01 | TBD | Pending |
+| PROJ-01 | Phase 1 | Pending |
+| PROJ-02 | Phase 1 | Pending |
+| PROJ-03 | Phase 1 | Pending |
+| PROJ-04 | Phase 1 | Pending |
+| PROJ-05 | Phase 1 | Pending |
+| NAV-01 | Phase 2 | Pending |
+| SHIP-01 | Phase 2 | Pending |
 
 **Coverage:**
 - v1 requirements: 7 total
-- Mapped to phases: 0 (pending roadmap)
-- Unmapped: 7 ⚠️
+- Mapped to phases: 7 (Phase 1: 5, Phase 2: 2)
+- Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-09-16*
